@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Pluma de tinta de Ink (variante papel: pluma oscura sobre fondo crema).
+  El glifo original vive en una caja de 220x220 con base/pivote en (110,176).
+  El grupo exterior lo centra y escala (s=0.46) dentro del lienzo 108x108 del
+  icono adaptativo, dejando margen seguro frente a las máscaras del launcher.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:name="glyph"
+        android:pivotX="110"
+        android:pivotY="111"
+        android:scaleX="0.46"
+        android:scaleY="0.46"
+        android:translateX="-56"
+        android:translateY="-57">
+
+        <!-- Pétalos externos (marrón oscuro) -->
+        <group android:rotation="-38" android:pivotX="110" android:pivotY="176">
+            <path
+                android:pathData="M103 176 C 99 124, 99 80, 101 48 C 105 41, 115 41, 119 48 C 121 80, 121 124, 117 176 Z"
+                android:fillColor="#3B2F1F" />
+        </group>
+        <group android:rotation="38" android:pivotX="110" android:pivotY="176">
+            <path
+                android:pathData="M103 176 C 99 124, 99 80, 101 48 C 105 41, 115 41, 119 48 C 121 80, 121 124, 117 176 Z"
+                android:fillColor="#3B2F1F" />
+        </group>
+
+        <!-- Pétalos intermedios (marrón medio) -->
+        <group android:rotation="-19" android:pivotX="110" android:pivotY="176">
+            <path
+                android:pathData="M103 176 C 99 124, 99 80, 101 48 C 105 41, 115 41, 119 48 C 121 80, 121 124, 117 176 Z"
+                android:fillColor="#7A5C34" />
+        </group>
+        <group android:rotation="19" android:pivotX="110" android:pivotY="176">
+            <path
+                android:pathData="M103 176 C 99 124, 99 80, 101 48 C 105 41, 115 41, 119 48 C 121 80, 121 124, 117 176 Z"
+                android:fillColor="#7A5C34" />
+        </group>
+
+        <!-- Pétalo central (degradado dorado) -->
+        <path android:pathData="M103 176 C 99 124, 99 80, 101 48 C 105 41, 115 41, 119 48 C 121 80, 121 124, 117 176 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="110" android:startY="44"
+                    android:endX="110" android:endY="176">
+                    <item android:offset="0" android:color="#E6B85F" />
+                    <item android:offset="1" android:color="#C58F36" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Base de la pluma -->
+        <path
+            android:pathData="M102,176 a8,5 0 1,0 16,0 a8,5 0 1,0 -16,0 Z"
+            android:fillColor="#2A2117" />
+    </group>
+</vector>
